@@ -26,11 +26,18 @@ export default class App extends React.Component {
               settings: { screen: SettingsScreen }
             })
           }
+        }, {
+          //android
+          tabBarPosition: 'bottom',
+          swipeEnabled: false
+          tabBarOptions: {
+            labelStyle: { fontSize: 12 }
+          }
         })
       }
     }, {
       navigationOptions: {
-        tabBarVisible: false 
+        tabBarVisible: false
       },
       lazy: true
     });
